@@ -49,7 +49,7 @@
         fileShare.buffer.push(buffer);
         fileShare.transmitted += buffer.byteLength; 
         fileShare.progress_node.innerText = Math.trunc(fileShare.transmitted / fileShare.metadata.total_buffer_size * 100) + "%";
-
+        console.log(fileShare.metadata.total_buffer_size)
         if (fileShare.transmitted == fileShare.metadata.total_buffer_size) {
             download(new Blob(fileShare.buffer), fileShare.metadata.filename);
             fileShare = {}; 
