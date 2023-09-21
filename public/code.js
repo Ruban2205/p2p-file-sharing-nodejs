@@ -35,6 +35,7 @@
 
         reader.onload = function (e) {
             let buffer = new Uint8Array(reader.result);
+            console.log(buffer);
 
             let el = document.createElement("div");
             el.classList.add("item");
@@ -47,7 +48,6 @@
             shareFile({
                 filename: file.name,
                 total_buffer_size: buffer.length,
-                // total_size: 1024
                 buffer_size: 1024
             }, buffer, el.querySelector(".progress"));
         }
