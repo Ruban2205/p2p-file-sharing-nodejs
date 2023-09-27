@@ -43,3 +43,11 @@ npm start dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+![Home Page](./screenshots/image.png)
+
+![Create Room Page](./screenshots/image2.png)
+
+![Receive Files](./screenshots/image3.png)
+
+![Sharing Page](./screenshots/image4.png)
