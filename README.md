@@ -44,6 +44,31 @@ npm start dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Creating a Docker Image
+
+Build the Docker image
+
+```bash
+sudo docker build --tag p2p-file-share .
+```
+
+Run the Docker image
+
+```bash
+sudo docker run -p 3000:3000 p2p-file-share
+```
+
+## Clone from Docker hub
+
+Run the application by directly cloning the docker image from docker hub.
+
+```bash
+sudo docker run -d -p 3000:3000 abylinjohnson/p2p-file-share
+```
+
+## Screenshots
+
+
 ![Home Page](./screenshots/image.png)
 
 ![Create Room Page](./screenshots/image2.png)
@@ -51,3 +76,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ![Receive Files](./screenshots/image3.png)
 
 ![Sharing Page](./screenshots/image4.png)
+
+
+Happy Hacking
